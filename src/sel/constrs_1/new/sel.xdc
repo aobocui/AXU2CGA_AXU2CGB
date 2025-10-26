@@ -1,0 +1,12 @@
+set_property PACKAGE_PIN AA13 [get_ports {sel_i}]
+set_property PACKAGE_PIN AE14 [get_ports {key0_i}]
+set_property PACKAGE_PIN AE15 [get_ports {key1_i}]
+set_property PACKAGE_PIN AB11 [get_ports {ACLK}]
+create_clock -period 40.000 -name ACLK -waveform {0.000 20.000} [get_ports ACLK]
+set_property PACKAGE_PIN AG14 [get_ports {ARESETn}]
+set_property IOSTANDARD LVCMOS33 [get_ports {*i}]
+set_property IOSTANDARD LVCMOS33 [get_ports {ACLK}]
+set_property IOSTANDARD LVCMOS33 [get_ports {ARESETn}]
+
+set_property PACKAGE_PIN W13	 [get_ports {led_o}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o}]
